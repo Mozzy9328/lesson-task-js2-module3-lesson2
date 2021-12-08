@@ -8,7 +8,7 @@ export function createHtml(data) {
 		console.log(data);
 		productContainer.innerHTML += `<div>
 		                                    <h2>${items.title}</h2>
-		                                    <p>${items.Price}</p>
+		                                    <p>${items.price}</p>
 		                                    <p>${items.description}</p>
 		                                  </div>`;
 	}
