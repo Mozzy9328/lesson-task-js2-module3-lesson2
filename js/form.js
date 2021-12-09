@@ -1,3 +1,4 @@
+import { createMenu } from "./components/createMenu.js";
 import { displayMessage } from "./components/displayMessage.js";
 import { BaseURL } from "./components/settings.js";
 import { saveToken, saveUser } from "./components/storage.js";
@@ -6,6 +7,8 @@ const form = document.querySelector("form");
 const username = document.querySelector("#name");
 const password = document.querySelector("#password");
 const message = document.querySelector(".message");
+
+createMenu();
 
 form.addEventListener("submit", submitForm);
 

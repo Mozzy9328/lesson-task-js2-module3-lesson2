@@ -30,6 +30,10 @@ export function getUser() {
 
 //LocalStorage
 
+export function clearStorage() {
+	localStorage.clear();
+}
+
 function saveToStorage(key, value) {
 	localStorage.setItem(key, JSON.stringify(value));
 }

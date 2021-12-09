@@ -11,26 +11,37 @@
 		<header>
 			<div class="menu-container">
 				<a href="index.html">Home</a>
+				<a href="add-product.html">Add Product</a>
 				<a href="login.html">Log in</a>
 			</div>
 		</header>
 		<main>
 			<div class="container">
-				<h1>Log in</h1>
+				<h1>Edit Product</h1>
+				<div class="loading">Loading Products...</div>
+
 				<div class="message"></div>
-				<form action="">
+				<form class="edit-form" action="">
+					<div class="message"></div>
 					<div>
-						<input id="name" placeholder="Username" />
+						<input id="title" placeholder="Title" />
 						<div class="name-error"></div>
 					</div>
 					<div>
-						<input id="password" type="password" placeholder="Password" />
-						<div class="password-error"></div>
+						<input id="price" placeholder="Price" />
+						<div class="price-error"></div>
 					</div>
-					<input type="submit" value="Send" />
+					<div>
+						<input id="description" placeholder="Description" />
+						<div class="description-error"></div>
+					</div>
+					<input id="id" />
+					<button id="update">Update</button>
+					<hr />
+					<div class="delete-container"></div>
 				</form>
 			</div>
 		</main>
-		<script src="js/form.js" type="module"></script>
+		<script src="js/edit.js" type="module"></script>
 	</body>
 </html>
